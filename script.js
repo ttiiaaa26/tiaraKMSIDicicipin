@@ -158,3 +158,9 @@ function orderGoFood() {
 function orderShopeeFood() {
   window.open("https://shopee.co.id/universal-link/now-food/shop/524254?deep_and_deferred=1&shareChannel=copy_link", "_blank");
 }
+function logout() {
+    alert("Anda telah logout!");
+    window.location.href = "login.html"; // arahkan ke halaman login
+}
+
+
