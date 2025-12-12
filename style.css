@@ -12,7 +12,7 @@
    BACKGROUND UTAMA
 ===================================================== */
 body {
-  background-image: url("img/background.png");
+  background-image: url("background.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -477,4 +477,5 @@ nav a:hover::after {
   .menu-item img {
     height: 170px;
   }
+
 }
