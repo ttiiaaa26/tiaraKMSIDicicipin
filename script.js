@@ -61,22 +61,6 @@ function loadUsers() {
 }
 
 // =============================
-// SOP SAVE + LOAD
-// =============================
-function saveSOP() {
-  let sop = document.getElementById("sopInput").value;
-  if (!sop) return alert("Isi SOP terlebih dahulu!");
-
-  localStorage.setItem("sopData", sop);
-  loadSOP();
-}
-
-function loadSOP() {
-  let sop = localStorage.getItem("sopData") || "Belum ada SOP.";
-  document.getElementById("sopDisplay").innerText = sop;
-}
-
-// =============================
 // RATING SAVE + LOAD
 // =============================
 function saveRating() {
@@ -162,5 +146,6 @@ function logout() {
     alert("Anda telah logout!");
     window.location.href = "login.html"; // arahkan ke halaman login
 }
+
 
 
