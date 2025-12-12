@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Rating Pelanggan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="user.html">User</a>
+  <a href="sop.html">SOP</a>
+  <a href="rating.html">Rating</a>
+</nav>
+
+<div class="info-container">
+  <h2>Berikan Rating</h2>
+
+  <select id="ratingValue" class="input-full">
+    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+    <option value="4">⭐⭐⭐⭐ (4)</option>
+    <option value="3">⭐⭐⭐ (3)</option>
+    <option value="2">⭐⭐ (2)</option>
+    <option value="1">⭐ (1)</option>
+  </select>
+
+  <textarea id="ratingText" placeholder="Tulis review..." class="textarea"></textarea>
+
+  <button onclick="saveRating()" class="btn-full">KIRIM</button>
+
+  <h3 style="margin-top:25px;">Rating Pelanggan</h3>
+  <div id="ratingList"></div>
+
+</div>
+
+<script src="script.js"></script>
+<script>loadRatings();</script>
+
+</body>
+</html>

@@ -1,0 +1,480 @@
+/* =====================================================
+   RESET
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* =====================================================
+   BACKGROUND UTAMA
+===================================================== */
+body {
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fffcec;
+}
+
+/* Overlay gelap biar teks makin jelas */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+/* LOGIN / REGISTER BOX */
+.login-container {
+  width: 350px;
+  margin: 120px auto;
+  background: rgba(0,0,0,0.8);
+  padding: 25px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  border: 2px solid #ffde59;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #ffde59;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* TABLE USER */
+.table-users {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.table-users th, .table-users td {
+  padding: 10px;
+  border: 1px solid #ffde59;
+}
+
+/* TEXTAREA & INPUT */
+.textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input-full {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.btn-full {
+  width: 100%;
+  padding: 12px;
+  background: #ffde59;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* RATING BOX */
+.rating-box {
+  background: rgba(0,0,0,0.7);
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ffde59;
+}
+/* =====================================================
+   NAVBAR
+===================================================== */
+nav {
+  width: 100%;
+  background: rgba(70, 45, 6, 0.95);
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+nav a {
+  color: #ffde59;
+  margin: 0 25px;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px #ffde59;
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+.hero {
+  padding: 165px 20px;
+  text-align: center;
+  background: transparent;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px black;
+  color: #ffea82;
+}
+
+.hero p {
+  font-size: 24px;
+  color: #fff9d6;
+  text-shadow: 0 0 8px black;
+}
+
+/* =====================================================
+   INFO TENTANG DICICIP.IN
+===================================================== */
+.info-container {
+  background: rgba(0,0,0,0.82);
+  width: 88%;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 35px;
+  border-radius: 15px;
+  border: 2px solid #ffde59;
+  box-shadow: 0 0 15px rgba(255,222,89,0.3);
+}
+
+.info-title {
+  font-size: 33px;
+  font-weight: bold;
+  color: #ffde59;
+  margin-bottom: 18px;
+  text-shadow: 0 0 10px black;
+}
+
+.info-container p {
+  font-size: 19px;
+  line-height: 1.85;
+  margin-bottom: 12px;
+  color: #fff2c2;
+}
+
+/* =====================================================
+   SOCIAL MEDIA SECTION
+===================================================== */
+.social-section {
+  text-align: center;
+  padding: 20px 0 50px;
+}
+
+.social-section h3 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  color: #ffde59;
+  text-shadow: 0 0 10px black;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.social-btn {
+  font-size: 34px;
+  color: #ffde59;
+  padding: 14px 16px;
+  border-radius: 50%;
+  background: rgba(255,222,89,0.15);
+  border: 2px solid #ffde59;
+  transition: 0.3s ease;
+}
+
+.social-btn:hover {
+  transform: scale(1.18);
+  background: #ffde59;
+  color: #000;
+}
+
+/* =====================================================
+   MENU GRID
+===================================================== */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  padding: 40px;
+}
+
+.menu-item {
+  background: rgba(0,0,0,0.78);
+  padding: 18px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2.5px solid #ffde59;
+  box-shadow: 0 0 12px rgba(255,222,89,0.25);
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.04);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #ffde59;
+}
+
+.menu-item h3 {
+  margin-top: 14px;
+  font-size: 22px;
+  color: #ffde59;
+}
+
+.menu-item p {
+  font-size: 18px;
+  color: #fffbd6;
+}
+
+/* ORDER NOW BUTTON */
+.menu-item button {
+  margin-top: 12px;
+  padding: 12px 20px;
+  background: #ffde59;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-item button:hover {
+  background: #fff07a;
+  transform: scale(1.08);
+}
+
+/* =====================================================
+   POPUP ORDER — TRANSPARENT GLASS + ICON BUTTONS
+===================================================== */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(6px);
+}
+
+.popup-content {
+  background: rgba(35, 24, 5, 0.82);
+  padding: 35px;
+  width: 330px;
+  text-align: center;
+  border-radius: 18px;
+  color: #ffde59;
+  border: 2.5px solid #ffde59;
+  box-shadow: 0 0 18px rgba(255,222,89,0.45);
+  animation: fadeIn 0.3s ease;
+}
+
+#selectedMenu {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #ffec9b;
+  text-shadow: 0 0 10px black;
+}
+
+.order-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+
+.order-btn img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-wa {
+  background: #25d366;
+  color: black;
+}
+.btn-wa:hover {
+  background: #4ff58b;
+  transform: scale(1.06);
+}
+
+.btn-gofood {
+  background: #ee2737;
+  color: white;
+}
+.btn-gofood:hover {
+  background: #ff4957;
+  transform: scale(1.06);
+}
+
+.btn-shopee {
+  background: #ff6d00;
+  color: white;
+}
+.btn-shopee:hover {
+  background: #ff8a33;
+  transform: scale(1.06);
+}
+
+.close-btn {
+  margin-top: 12px;
+  padding: 12px;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  background: #b30000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.close-btn:hover {
+  background: #e30000;
+  transform: scale(1.06);
+}
+
+@keyframes fadeIn {
+  from { transform
+
+/* =====================================================
+   ANIMASI SCROLL (FADE-IN)
+===================================================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =====================================================
+   HERO — TOMBOL ORDER NOW
+===================================================== */
+.hero .btn-order {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #ffde59, #ffb300);
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(255,222,89,0.5);
+  transition: 0.3s ease;
+}
+
+.hero .btn-order:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255,222,89,0.8);
+}
+
+/* =====================================================
+   NAVBAR EFFECT GLOSSY GOLD
+===================================================== */
+nav a {
+  position: relative;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: #ffde59;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+nav a:hover::after {
+  width: 100%;
+}
+}
+}
+
+/* =====================================================
+   RESPONSIVE MOBILE
+===================================================== */
+@media (max-width: 600px) {
+  nav a {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .info-container {
+    padding: 25px;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .menu-item img {
+    height: 170px;
+  }
+}

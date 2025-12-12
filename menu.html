@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Dicicipin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="menu.html">Menu</a>
+</nav>
+
+<h1 style="text-align:center; margin-top:20px;">Menu Banana Crispy</h1>
+
+<div class="menu-container">
+
+    <!-- ========== MENU BANANA CRISPY ========== -->
+    <div class="menu-item">
+        <img src="Pisang pasir original.jpg">
+        <h3>Banana Crispy Original</h3>
+        <p>Rp 13.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Original')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="Pisang coklat lumer.jpg">
+        <h3>Banana Crispy Chocolate</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Chocolate')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="download.jpg">
+        <h3>Banana Crispy Greentea</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Greentea')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="download (1).jpg">
+        <h3>Banana Crispy Strawberry</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Strawberry')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="Blubery.jpg">
+        <h3>Banana Crispy Blueberry</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Blueberry')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="cappucino.jpg">
+        <h3>Banana Crispy Cappucino</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Cappucino')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="Mix toping.jpg">
+        <h3>Banana Crispy Mix </h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Mix')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="download (2).jpg">
+        <h3>Banana Crispy Tiramisu</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Tiramisu')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="pisang keju.jpg">
+        <h3>Banana Crispy Cheese</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Cheese')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="Piscok Saus Taro.jpg">
+        <h3>Banana Crispy Taro</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Taro')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="Chocomaltine.jpg">
+        <h3>Banana Crispy Chocomaltine</h3>
+        <p>Rp 17.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Chocomaltine')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="hazzelnut.jpg">
+        <h3>Banana Crispy Hazelnut</h3>
+        <p>Rp 18.000</p>
+        <button onclick="openOrderOptions('Banana Crispy Hazelnut')">ORDER NOW</button>
+    </div>
+
+    <!-- ========== SWEET CORN MENU ========== -->
+    <div class="menu-item">
+        <img src="Jasuke.jpg">
+        <h3>Sweet Corn Cheese</h3>
+        <p>Rp 9.000</p>
+        <button onclick="openOrderOptions('Sweet Corn Cheese')">ORDER NOW</button>
+    </div>
+  
+    <!-- ========== MINUMAN MENU ========== -->
+    <div class="menu-item">
+        <img src="Matcha Blisss.jpg">
+        <h3>Matcha Bliss</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Matcha Bliss')">ORDER NOW</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="Milo dino.jpg">
+        <h3>Milo Dino</h3>
+        <p>Rp 15.000</p>
+        <button onclick="openOrderOptions('Milo Dino')">ORDER NOW</button>
+    </div>
+  
+        <div class="menu-item">
+        <img src="lemon tea.jpg">
+        <h3>Lemon Tea</h3>
+        <p>Rp 10.000</p>
+        <button onclick="openOrderOptions('Lemon Tea')">ORDER NOW</button>
+    </div>
+  
+</div>
+  
+
+
+<!-- POPUP ORDER -->
+<!-- POPUP ORDER -->
+<div id="orderPopup" class="popup">
+  <div class="popup-content">
+    <h3>Pilih Platform Pemesanan</h3>
+    <p id="selectedMenu"></p>
+
+    <div class="order-buttons">
+      <button class="order-btn btn-wa" onclick="orderWhatsApp()">
+        <img src="WA.jpg"> WhatsApp
+      </button>
+      <button class="order-btn btn-gofood" onclick="orderGoFood()">
+        <img src="GOFOOD.png"> GoFood
+      </button>
+      <button class="order-btn btn-shopee" onclick="orderShopeeFood()">
+        <img src="SHOPEE.png"> ShopeeFood
+      </button>
+    </div>
+
+    <button class="close-btn" onclick="closeOrderOptions()">BATAL</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

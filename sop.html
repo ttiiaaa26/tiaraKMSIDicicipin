@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Form SOP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="home.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="user.html">User</a>
+  <a href="sop.html">SOP</a>
+  <a href="rating.html">Rating</a>
+</nav>
+
+<div class="info-container">
+
+  <h2>FORM SOP</h2>
+
+  <textarea id="sopInput" placeholder="Tulis SOP lengkap..." 
+            class="textarea"></textarea>
+
+  <button onclick="saveSOP()" class="btn-full">SIMPAN SOP</button>
+
+  <h3 style="margin-top:20px;">SOP Tersimpan</h3>
+  <div id="sopDisplay" class="output-box"></div>
+
+</div>
+
+<script src="script.js"></script>
+<script>loadSOP();</script>
+
+</body>
+</html>
